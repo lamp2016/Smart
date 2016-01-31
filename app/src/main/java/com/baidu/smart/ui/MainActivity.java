@@ -1,14 +1,17 @@
 
 package com.baidu.smart.ui;
 
+import com.baidu.smart.R;
+import com.baidu.third.xlistview.XListView;
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.ArrayAdapter;
 
-import com.baidu.smart.R;
-import com.baidu.third.xlistview.XListView;
+import butterknife.Bind;
+import butterknife.ButterKnife;
 
 import java.util.ArrayList;
 
@@ -31,6 +34,9 @@ public class MainActivity extends BaseActivity implements XListView.IXListViewLi
 
     private static int refreshCnt = 0;
 
+    @Bind(R.id.xListView)
+    XListView mListView;
+
     public static void start(Context context) {
         Intent intent = new Intent(context, MainActivity.class);
         context.startActivity(intent);
@@ -40,8 +46,8 @@ public class MainActivity extends BaseActivity implements XListView.IXListViewLi
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
         geneItems();
-        mListView = (XListView)findViewById(R.id.xListView);
         mListView.setPullLoadEnable(true);
         mAdapter = new ArrayAdapter<>(this, R.layout.list_item, items);
         mListView.setAdapter(mAdapter);
