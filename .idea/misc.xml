@@ -4,10 +4,10 @@
     <option name="defaultSettings" value="true" />
     <option name="formatter" value="ECLIPSE" />
     <option name="id" value="1449715137101" />
-    <option name="importOrderConfigFilePath" value="$PROJECT_DIR$/../../workspace/football/format/android.importorder" />
+    <option name="importOrderConfigFilePath" value="$USER_HOME$/Desktop/workspace/football/format/android.importorder" />
     <option name="importOrderFromFile" value="true" />
     <option name="name" value="default" />
-    <option name="pathToConfigFileJava" value="$PROJECT_DIR$/../../workspace/football/format/android-formatting.xml" />
+    <option name="pathToConfigFileJava" value="$USER_HOME$/Desktop/workspace/football/format/android-formatting.xml" />
     <option name="selectedJavaProfile" value="Android" />
   </component>
   <component name="EntryPointsManager">
