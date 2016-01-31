@@ -1,19 +1,19 @@
 
 package com.baidu.smart.ui;
 
-import com.baidu.smart.R;
-import com.baidu.third.xlistview.XListView;
-
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.ArrayAdapter;
 
-import butterknife.Bind;
-import butterknife.ButterKnife;
+import com.baidu.smart.R;
+import com.baidu.third.xlistview.XListView;
 
 import java.util.ArrayList;
+
+import butterknife.Bind;
+import butterknife.ButterKnife;
 
 /**
  * Created by lishuai on 16/1/29.
@@ -21,8 +21,6 @@ import java.util.ArrayList;
 public class MainActivity extends BaseActivity implements XListView.IXListViewListener {
 
     public static final String TAG = "MainActivity";
-
-    private XListView mListView;
 
     private ArrayAdapter<String> mAdapter;
 
