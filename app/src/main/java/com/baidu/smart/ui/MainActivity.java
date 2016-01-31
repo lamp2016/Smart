@@ -43,7 +43,7 @@ public class MainActivity extends BaseActivity implements XListView.IXListViewLi
         geneItems();
         mListView = (XListView)findViewById(R.id.xListView);
         mListView.setPullLoadEnable(true);
-        mAdapter = new ArrayAdapter<String>(this, R.layout.list_item, items);
+        mAdapter = new ArrayAdapter<>(this, R.layout.list_item, items);
         mListView.setAdapter(mAdapter);
         // mListView.setPullLoadEnable(false);
         // mListView.setPullRefreshEnable(false);
