@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/lishuai/test_mall/Android-PullToRefresh/build/intermediates/res/merged/androidTest/debug/layout/pull_to_refresh_header_horizontal.xml",
+        "source": "/Users/lishuai/test_mall/Android-PullToRefresh/build/intermediates/bundles/debug/res/layout/pull_to_refresh_header_horizontal.xml"
+    },
+    {
+        "merged": "/Users/lishuai/test_mall/extras/Android-PullToRefresh/build/intermediates/res/merged/androidTest/debug/layout/pull_to_refresh_header_vertical.xml",
+        "source": "/Users/lishuai/test_mall/extras/Android-PullToRefresh/build/intermediates/bundles/debug/res/layout/pull_to_refresh_header_vertical.xml"
+    },
+    {
+        "merged": "/Users/lishuai/test_mall/Android-PullToRefresh/build/intermediates/res/merged/androidTest/debug/layout/pull_to_refresh_header_vertical.xml",
+        "source": "/Users/lishuai/test_mall/Android-PullToRefresh/build/intermediates/bundles/debug/res/layout/pull_to_refresh_header_vertical.xml"
+    },
+    {
+        "merged": "/Users/lishuai/test_mall/extras/Android-PullToRefresh/build/intermediates/res/merged/androidTest/debug/layout/pull_to_refresh_header_horizontal.xml",
+        "source": "/Users/lishuai/test_mall/extras/Android-PullToRefresh/build/intermediates/bundles/debug/res/layout/pull_to_refresh_header_horizontal.xml"
+    }
+]
