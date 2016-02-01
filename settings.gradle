@@ -1,2 +1,3 @@
-include ':app'
+include ':app', ':xutils', 'xutils', ':sample'
 include ':extras:Android-PullToRefresh'
+//include ':extras:xutils'

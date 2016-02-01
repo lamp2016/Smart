@@ -12,9 +12,6 @@ import com.baidu.third.xlistview.XListView;
 
 import java.util.ArrayList;
 
-import butterknife.Bind;
-import butterknife.ButterKnife;
-
 /**
  * Created by lishuai on 16/1/29.
  */
@@ -32,7 +29,7 @@ public class MainActivity extends BaseActivity implements XListView.IXListViewLi
 
     private static int refreshCnt = 0;
 
-    @Bind(R.id.xListView)
+//    @ViewInject(R.id.xListView)
     XListView mListView;
 
     public static void start(Context context) {
@@ -44,7 +41,8 @@ public class MainActivity extends BaseActivity implements XListView.IXListViewLi
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ButterKnife.bind(this);
+//        ViewUtils.inject(this);
+        mListView = (XListView)findViewById(R.id.xListView);
         geneItems();
         mListView.setPullLoadEnable(true);
         mAdapter = new ArrayAdapter<>(this, R.layout.list_item, items);
