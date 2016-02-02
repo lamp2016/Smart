@@ -1,5 +1,14 @@
 package org.xutils.image;
 
+import org.xutils.cache.DiskCacheEntity;
+import org.xutils.cache.DiskCacheFile;
+import org.xutils.cache.LruDiskCache;
+import org.xutils.common.Callback;
+import org.xutils.common.task.PriorityExecutor;
+import org.xutils.common.util.IOUtil;
+import org.xutils.common.util.LogUtil;
+import org.xutils.x;
+
 import android.backport.webp.WebPFactory;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -12,15 +21,6 @@ import android.graphics.PorterDuffXfermode;
 import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
 import android.media.ExifInterface;
-
-import org.xutils.cache.DiskCacheEntity;
-import org.xutils.cache.DiskCacheFile;
-import org.xutils.cache.LruDiskCache;
-import org.xutils.common.Callback;
-import org.xutils.common.task.PriorityExecutor;
-import org.xutils.common.util.IOUtil;
-import org.xutils.common.util.LogUtil;
-import org.xutils.x;
 
 import java.io.BufferedInputStream;
 import java.io.File;
