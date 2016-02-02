@@ -13,7 +13,6 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/extras" />
             <option value="$PROJECT_DIR$/extras/Android-PullToRefresh" />
-            <option value="$PROJECT_DIR$/extras/xutils" />
           </set>
         </option>
       </GradleProjectSettings>

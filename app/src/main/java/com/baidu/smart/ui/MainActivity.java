@@ -24,7 +24,7 @@ public class MainActivity extends BaseActivity implements XListView.IXListViewLi
 
     private ArrayAdapter<String> mAdapter;
 
-    private ArrayList<String> items = new ArrayList<String>();
+    private ArrayList<String> items = new ArrayList<>();
 
     private Handler mHandler;
 
@@ -46,6 +46,7 @@ public class MainActivity extends BaseActivity implements XListView.IXListViewLi
         setContentView(R.layout.activity_main);
         x.view().inject(this);
         geneItems();
+
         mListView.setPullLoadEnable(true);
         mAdapter = new ArrayAdapter<>(this, R.layout.list_item, items);
         mListView.setAdapter(mAdapter);

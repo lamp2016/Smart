@@ -4,6 +4,7 @@ package com.baidu.smart.app;
 import android.app.Application;
 
 import com.baidu.smart.BuildConfig;
+import com.facebook.drawee.backends.pipeline.Fresco;
 
 import org.xutils.x;
 
@@ -21,5 +22,7 @@ public class MyApplication extends Application {
         // xutils
         x.Ext.init(this);
         x.Ext.setDebug(BuildConfig.DEBUG);
+        // fresco
+        Fresco.initialize(this);
     }
 }

@@ -9,13 +9,6 @@
 
     <include layout="@layout/view_titlebar" />
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="40dp"
-        android:gravity="center"
-        android:text="@string/app_name"
-        android:textSize="16sp" />
-
     <com.baidu.third.xlistview.XListView
         android:id="@+id/xListView"
         android:layout_width="fill_parent"
