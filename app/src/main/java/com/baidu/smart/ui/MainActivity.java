@@ -10,6 +10,9 @@ import android.widget.ArrayAdapter;
 import com.baidu.smart.R;
 import com.baidu.third.xlistview.XListView;
 
+import org.xutils.view.annotation.ViewInject;
+import org.xutils.x;
+
 import java.util.ArrayList;
 
 /**
@@ -29,7 +32,7 @@ public class MainActivity extends BaseActivity implements XListView.IXListViewLi
 
     private static int refreshCnt = 0;
 
-//    @ViewInject(R.id.xListView)
+    @ViewInject(R.id.xListView)
     XListView mListView;
 
     public static void start(Context context) {
@@ -41,8 +44,7 @@ public class MainActivity extends BaseActivity implements XListView.IXListViewLi
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        ViewUtils.inject(this);
-        mListView = (XListView)findViewById(R.id.xListView);
+        x.view().inject(this);
         geneItems();
         mListView.setPullLoadEnable(true);
         mAdapter = new ArrayAdapter<>(this, R.layout.list_item, items);
