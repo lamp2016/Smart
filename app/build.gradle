@@ -28,4 +28,6 @@ dependencies {
     compile 'org.xutils:xutils:3.3.8'
     compile 'com.google.code.gson:gson:2.5'
     compile 'com.squareup.okhttp3:okhttp:3.0.1'
+    compile project(':extras:slidingmenu')
+    compile project(':extras:Android-PullToRefresh')
 }

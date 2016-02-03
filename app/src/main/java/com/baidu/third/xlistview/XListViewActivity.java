@@ -1,11 +1,11 @@
 package com.baidu.third.xlistview;
 
-import com.baidu.smart.R;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.ArrayAdapter;
+
+import com.baidu.smart.R;
 
 import java.util.ArrayList;
 
@@ -23,7 +23,7 @@ public class XListViewActivity extends Activity implements XListView.IXListViewL
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		geneItems();
-		mListView = (XListView) findViewById(R.id.xListView);
+//		mListView = (XListView) findViewById(R.id.xListView);
 		mListView.setPullLoadEnable(true);
 		mAdapter = new ArrayAdapter<String>(this, R.layout.list_item, items);
 		mListView.setAdapter(mAdapter);
