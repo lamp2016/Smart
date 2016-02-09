@@ -115,6 +115,18 @@ public class MainActivity extends SlidingFragmentActivity {
     }
 
     /**
+     * 切换Fragment
+     *
+     * @param fragment
+     */
+    public void switchConent(Fragment fragment) {
+        mContent = fragment;
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.content_frame, fragment).commit();
+        getSlidingMenu().showContent();
+    }
+
+    /**
      * 沉浸式
      * 
      * @param on
