@@ -31,7 +31,7 @@ public class GoodsCategoryView extends LinearLayout {
     }
 
     private void initView() {
-        View.inflate(mContext, R.layout.view_caegory_goods, this);
+        View.inflate(mContext, R.layout.view_category_goods, this);
         x.view().inject(this);
     }
 
