@@ -7,16 +7,18 @@ import android.os.Handler;
 import android.widget.ArrayAdapter;
 
 import com.baidu.smart.R;
+import com.baidu.smart.view.MallListViewHeaderView;
 import com.baidu.third.xlistview.XListView;
 
 import org.xutils.view.annotation.ViewInject;
+import org.xutils.x;
 
 import java.util.ArrayList;
 
 /**
  * Created by baishixin on 16/2/4.
  */
-public class HomeActivity extends BaseActivity implements XListView.IXListViewListener{
+public class HomeActivity extends BaseActivity implements XListView.IXListViewListener {
     public static final String TAG = "HomeActivity";
 
     @ViewInject(R.id.xlv_index_productlist)
@@ -37,14 +39,20 @@ public class HomeActivity extends BaseActivity implements XListView.IXListViewLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         geneItems();
-//		mListView = (XListView) findViewById(R.id.xListView);
+        x.view().inject(this);
+        initView();
+    }
+
+    private void initView() {
+
+        MallListViewHeaderView mallListViewHeaderView = new MallListViewHeaderView(this);
+
         mListView.setPullLoadEnable(true);
         mAdapter = new ArrayAdapter<String>(this, R.layout.list_item, items);
         mListView.setAdapter(mAdapter);
-//		mListView.setPullLoadEnable(false);
-//		mListView.setPullRefreshEnable(false);
         mListView.setXListViewListener(this);
         mHandler = new Handler();
+        mListView.addHeaderView(mallListViewHeaderView);
     }
 
     private void geneItems() {

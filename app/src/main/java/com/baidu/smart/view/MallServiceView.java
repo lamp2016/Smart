@@ -1,6 +1,7 @@
 package com.baidu.smart.view;
 
 import android.content.Context;
+import android.net.Uri;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ImageView;
@@ -16,7 +17,7 @@ import org.xutils.x;
 /**
  * Created by baishixin on 16/2/10.
  */
-public class MallServiceView extends LinearLayout{
+public class MallServiceView extends LinearLayout {
 
     private Context mContext;
 
@@ -36,11 +37,12 @@ public class MallServiceView extends LinearLayout{
     }
 
     private void initView() {
-        View.inflate(mContext, R.layout.view_category_service,this);
+        View.inflate(mContext, R.layout.view_category_service, this);
         x.view().inject(this);
     }
 
-    public void setData(ServiceModel serviceModel){
-
+    public void setData(ServiceModel serviceModel) {
+        mImageView_headerService.setImageURI(Uri.parse(serviceModel.getImg_url()));
+        mTextView_header_ServiceTitle.setText(serviceModel.getTitle());
     }
 }

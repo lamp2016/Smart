@@ -8,12 +8,12 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.baidu.smart.R;
-import com.baidu.smart.model.ProductModel;
+import com.baidu.smart.model.CategoriesModel;
+import com.baidu.smart.model.CustomsModel;
 
 import org.xutils.view.annotation.ViewInject;
 import org.xutils.x;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -51,31 +51,60 @@ public class GoodsCategoryView extends LinearLayout {
     private void initView() {
         View.inflate(mContext, R.layout.view_category_goods, this);
         x.view().inject(this);
-        setData(new ArrayList<ProductModel>());
     }
 
-    public void setData(List<ProductModel> list) {
-        for (int i = 1; i <= 6; i++) {
-            switch (i) {
-                case 1:
-                    mTextView_productTitle1.setText("类别" + i);
-                    break;
-                case 2:
-                    mTextView_productTitle2.setText("类别" + i);
-                    break;
-                case 3:
-                    mTextView_productTitle3.setText("类别" + i);
-                    break;
-                case 4:
-                    mTextView_productTitle4.setText("类别" + i);
-                    break;
-                case 5:
-                    mTextView_productTitle5.setText("类别" + i);
-                    break;
-                case 6:
-                    mTextView_productTitle6.setText("类别" + i);
-                    break;
+    public void setData(CategoriesModel categoriesModel) {
+        mTextView_categoryTitle.setText(categoriesModel.getTitle());
+        List<CustomsModel> customsModels = categoriesModel.getCustomsModelList();
+        CustomsModel customsModel = null;
+        for (int i = 0; i < 6; i++) {
+            customsModel = customsModels.get(i);
+            if (customsModel != null) {
+                switch (i) {
+                    case 0:
+                        if(customsModel.getTitle()!=null){
+
+                        }
+                        break;
+                    case 1:
+                        mTextView_productTitle2.setVisibility(INVISIBLE);
+                        break;
+                    case 2:
+                        mTextView_productTitle3.setVisibility(INVISIBLE);
+                        break;
+                    case 3:
+                        mTextView_productTitle4.setVisibility(INVISIBLE);
+                        break;
+                    case 4:
+                        mTextView_productTitle5.setVisibility(INVISIBLE);
+                        break;
+                    case 5:
+                        mTextView_productTitle6.setVisibility(INVISIBLE);
+                        break;
+                }
+            } else {
+                switch (i) {
+                    case 0:
+                        mTextView_productTitle1.setVisibility(INVISIBLE);
+                        break;
+                    case 1:
+                        mTextView_productTitle2.setVisibility(INVISIBLE);
+                        break;
+                    case 2:
+                        mTextView_productTitle3.setVisibility(INVISIBLE);
+                        break;
+                    case 3:
+                        mTextView_productTitle4.setVisibility(INVISIBLE);
+                        break;
+                    case 4:
+                        mTextView_productTitle5.setVisibility(INVISIBLE);
+                        break;
+                    case 5:
+                        mTextView_productTitle6.setVisibility(INVISIBLE);
+                        break;
+                }
             }
+
         }
     }
 }
