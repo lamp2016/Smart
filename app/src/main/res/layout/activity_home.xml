@@ -3,4 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+    <com.baidu.third.xlistview.XListView
+        android:id="@+id/xlv_index_productlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.baidu.third.xlistview.XListView>
+
 </LinearLayout>
