@@ -1,10 +1,18 @@
 [
     {
+        "merged": "/Users/baishixin/Desktop/workspace/Mall/extras/Android-PullToRefresh/build/intermediates/res/merged/androidTest/debug/drawable/indicator_bg_bottom.xml",
+        "source": "/Users/baishixin/Desktop/workspace/Mall/extras/Android-PullToRefresh/build/intermediates/bundles/debug/res/drawable/indicator_bg_bottom.xml"
+    },
+    {
         "merged": "/Users/lishuai/test_mall/extras/Android-PullToRefresh/build/intermediates/res/merged/androidTest/debug/drawable/indicator_bg_top.xml",
         "source": "/Users/lishuai/test_mall/extras/Android-PullToRefresh/build/intermediates/bundles/debug/res/drawable/indicator_bg_top.xml"
     },
     {
         "merged": "/Users/lishuai/test_mall/extras/Android-PullToRefresh/build/intermediates/res/merged/androidTest/debug/drawable/indicator_bg_bottom.xml",
         "source": "/Users/lishuai/test_mall/extras/Android-PullToRefresh/build/intermediates/bundles/debug/res/drawable/indicator_bg_bottom.xml"
+    },
+    {
+        "merged": "/Users/baishixin/Desktop/workspace/Mall/extras/Android-PullToRefresh/build/intermediates/res/merged/androidTest/debug/drawable/indicator_bg_top.xml",
+        "source": "/Users/baishixin/Desktop/workspace/Mall/extras/Android-PullToRefresh/build/intermediates/bundles/debug/res/drawable/indicator_bg_top.xml"
     }
 ]

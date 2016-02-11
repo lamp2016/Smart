@@ -3,10 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/extras/Android-PullToRefresh/Android-PullToRefresh.iml" filepath="$PROJECT_DIR$/extras/Android-PullToRefresh/Android-PullToRefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mall.iml" filepath="$PROJECT_DIR$/Mall.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/extras/extras.iml" filepath="$PROJECT_DIR$/extras/extras.iml" />
       <module fileurl="file://$PROJECT_DIR$/extras/slidingmenu/slidingmenu.iml" filepath="$PROJECT_DIR$/extras/slidingmenu/slidingmenu.iml" />
-      <module fileurl="file://$PROJECT_DIR$/test_mall.iml" filepath="$PROJECT_DIR$/test_mall.iml" />
     </modules>
   </component>
 </project>

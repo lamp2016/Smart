@@ -12,7 +12,7 @@ import com.baidu.smart.R;
  */
 public class SplashActivity extends BaseActivity {
 
-    private Handler handler = new Handler(){
+    private Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
@@ -23,7 +23,7 @@ public class SplashActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        MainActivity.start(SplashActivity.this);
+        HomeActivity.start(SplashActivity.this);
 
         finish();
     }

@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
+    <com.baidu.smart.view.RotationImageView
+        android:id="@+id/riv_index_listview_header_rotation"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+    </com.baidu.smart.view.RotationImageView>
+
+    <LinearLayout
+        android:id="@+id/ll_index_listview_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.baidu.smart.view.MallServiceView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </com.baidu.smart.view.MallServiceView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_index_listview_header_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E1E0DE"
+        android:orientation="vertical">
+
+    </LinearLayout>
 </LinearLayout>
