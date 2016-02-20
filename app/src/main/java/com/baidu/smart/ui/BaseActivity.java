@@ -32,6 +32,8 @@ public class BaseActivity extends Activity {
         SystemBarTintManager tintManager = new SystemBarTintManager(this);
         tintManager.setStatusBarTintEnabled(true);
         tintManager.setStatusBarTintResource(R.color.theme);// 通知栏所需颜色
+
+
     }
 
     @TargetApi(19)

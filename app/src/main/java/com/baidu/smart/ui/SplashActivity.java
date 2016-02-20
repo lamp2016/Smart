@@ -23,7 +23,7 @@ public class SplashActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        HomeActivity.start(SplashActivity.this);
+        MainActivity.start(SplashActivity.this);
 
         finish();
     }

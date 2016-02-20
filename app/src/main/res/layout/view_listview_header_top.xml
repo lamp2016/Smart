@@ -17,12 +17,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <com.baidu.smart.view.MallServiceView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
 
-        </com.baidu.smart.view.MallServiceView>
     </LinearLayout>
 
     <LinearLayout
@@ -32,10 +27,6 @@
         android:background="#E1E0DE"
         android:orientation="vertical">
 
-        <com.baidu.smart.view.GoodsCategoryView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
-        </com.baidu.smart.view.GoodsCategoryView>
     </LinearLayout>
 </LinearLayout>

@@ -21,16 +21,16 @@ public class CategoriesModel {
     /**
      * 分类下的自定义button
      */
-    private List<CustomsModel> customsModelList;
+    private List<CustomsModel> customs;
 
     public CategoriesModel() {
     }
 
-    public CategoriesModel(String title, String img_url, String scheme, List<CustomsModel> customsModelList) {
+    public CategoriesModel(String title, String img_url, String scheme, List<CustomsModel> customs) {
         this.title = title;
         this.img_url = img_url;
         this.scheme = scheme;
-        this.customsModelList = customsModelList;
+        this.customs = customs;
     }
 
     public String getTitle() {
@@ -57,11 +57,21 @@ public class CategoriesModel {
         this.scheme = scheme;
     }
 
-    public List<CustomsModel> getCustomsModelList() {
-        return customsModelList;
+    public List<CustomsModel> getCustoms() {
+        return customs;
     }
 
-    public void setCustomsModelList(List<CustomsModel> customsModelList) {
-        this.customsModelList = customsModelList;
+    public void setCustoms(List<CustomsModel> customs) {
+        this.customs = customs;
+    }
+
+    @Override
+    public String toString() {
+        return "CategoriesModel{" +
+                "title='" + title + '\'' +
+                ", img_url='" + img_url + '\'' +
+                ", scheme='" + scheme + '\'' +
+                ", customs=" + customs +
+                '}';
     }
 }

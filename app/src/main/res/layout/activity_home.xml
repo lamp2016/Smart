@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mall="http://schemas.android.com/apk/res-auto/com.baidu.smart.view"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    android:background="#E1E0DE"
+    android:orientation="vertical">
 
     <com.baidu.third.xlistview.XListView
         android:id="@+id/xlv_index_productlist"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
     </com.baidu.third.xlistview.XListView>
 
-</LinearLayout>
+    <com.baidu.smart.view.IndexFloatView
+        android:id="@+id/che"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        mall:radius="22.5dp" />
+</RelativeLayout>

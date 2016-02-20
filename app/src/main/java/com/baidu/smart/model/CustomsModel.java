@@ -52,7 +52,7 @@ public class CustomsModel {
 
     @Override
     public String toString() {
-        return "ServiceModel{" +
+        return "CustomsModel{" +
                 "title='" + title + '\'' +
                 ", img_url='" + img_url + '\'' +
                 ", scheme='" + scheme + '\'' +

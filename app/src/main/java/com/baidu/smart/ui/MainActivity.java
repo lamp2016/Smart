@@ -69,6 +69,8 @@ public class MainActivity extends SlidingFragmentActivity {
 
             }
         });
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.content_frame, new HomeFragment()).commit();
     }
 
     /**

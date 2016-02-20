@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#E1E0DE"
+
     android:orientation="horizontal"
     android:paddingLeft="10dp"
     android:paddingRight="10dp"
@@ -28,17 +28,17 @@
             android:layout_height="36dp"
             android:orientation="horizontal">
 
-            <TextView
+            <com.baidu.smart.view.GoodsCustomView
                 android:id="@+id/tv_index_header_producttitle1"
                 style="@style/ViewCategoryStyle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="2dp"
                 android:layout_weight="1"
-                android:background="@drawable/corners"
-                android:text="类别" />
+                android:gravity="center_vertical"
+                android:background="@drawable/corners"/>
 
-            <TextView
+            <com.baidu.smart.view.GoodsCustomView
                 android:id="@+id/tv_index_header_producttitle2"
                 style="@style/ViewCategoryStyle"
                 android:layout_width="0dp"
@@ -46,9 +46,9 @@
                 android:layout_marginLeft="2dp"
                 android:layout_weight="1"
                 android:background="@drawable/corners"
-                android:text="类别" />
+                android:gravity="center_vertical"/>
 
-            <TextView
+            <com.baidu.smart.view.GoodsCustomView
                 android:id="@+id/tv_index_header_producttitle3"
                 style="@style/ViewCategoryStyle"
                 android:layout_width="0dp"
@@ -56,7 +56,7 @@
                 android:layout_marginLeft="2dp"
                 android:layout_weight="1"
                 android:background="@drawable/corners"
-                android:text="类别" />
+                android:gravity="center_vertical"/>
 
 
         </LinearLayout>
@@ -67,17 +67,16 @@
             android:orientation="horizontal"
             android:paddingTop="2dp">
 
-            <TextView
+            <com.baidu.smart.view.GoodsCustomView
                 android:id="@+id/tv_index_header_producttitle4"
-                style="@style/ViewCategoryStyle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="2dp"
                 android:layout_weight="1"
                 android:background="@drawable/corners"
-                android:text="类别" />
+                android:gravity="center_vertical"/>
 
-            <TextView
+            <com.baidu.smart.view.GoodsCustomView
                 android:id="@+id/tv_index_header_producttitle5"
                 style="@style/ViewCategoryStyle"
                 android:layout_width="0dp"
@@ -85,9 +84,9 @@
                 android:layout_marginLeft="2dp"
                 android:layout_weight="1"
                 android:background="@drawable/corners"
-                android:text="类别" />
+                android:gravity="center_vertical"/>
 
-            <TextView
+            <com.baidu.smart.view.GoodsCustomView
                 android:id="@+id/tv_index_header_producttitle6"
                 style="@style/ViewCategoryStyle"
                 android:layout_width="0dp"
@@ -95,7 +94,7 @@
                 android:layout_marginLeft="2dp"
                 android:layout_weight="1"
                 android:background="@drawable/corners"
-                android:text="类别" />
+                android:gravity="center_vertical" />
 
         </LinearLayout>
 

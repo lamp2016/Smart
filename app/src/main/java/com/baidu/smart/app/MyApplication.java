@@ -16,6 +16,8 @@ import okhttp3.OkHttpClient;
  */
 public class MyApplication extends Application {
 
+    public static final String MALL_INDEX = "https://mall.dongqiudi.com/api/index";
+
     @Override
     public void onCreate() {
         super.onCreate();

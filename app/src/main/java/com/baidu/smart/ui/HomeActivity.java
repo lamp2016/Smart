@@ -21,6 +21,7 @@ import java.util.ArrayList;
 public class HomeActivity extends BaseActivity implements XListView.IXListViewListener {
     public static final String TAG = "HomeActivity";
 
+
     @ViewInject(R.id.xlv_index_productlist)
     private XListView mListView;
     private ArrayAdapter<String> mAdapter;
